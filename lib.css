@@ -1,0 +1,89 @@
+::placeholder {
+  color: lightgray;
+}
+input,textarea {
+  background-color: white;
+  border-radius: 0.3em;
+  border: 1px solid gray;
+}
+input[type="checkbox"] {
+  appearance: none;
+  background-color: limegreen;
+  border: 1px solid limegreen;
+  border-radius: 5px;
+  width: 3.5em;
+  height: 1.7em;
+  background-clip: content-box;
+  padding: 1px 1.5em 1px 1px;
+}
+input[type="checkbox"]:checked {
+  background-color: crimson;
+  border-color: crimson;
+  padding: 1px 1px 1px 1.5em;
+}
+input[type="radio"] {
+  appearance: none;
+  border: 1px solid green;
+  border-radius: 50%;
+  width: 1.7em;
+  height: 1.7em;
+}
+input[type="radio"]:checked {
+  background-image: radial-gradient(circle,limegreen,limegreen 60%,transparent 60%);
+}
+input[type="text"]:valid {
+  color: limegreen;
+  border-color: limegreen;
+  background-image: url(valid.png);
+}
+input[type="text"]:invalid {
+  color: crimson;
+  border-color: crimson;
+  background-image: url(invalid.png);
+}
+input[disabled][type="text"] {
+  color: black;
+  border-color: lightgray;
+  background-image: none;
+}
+button {
+  background-color: limegreen;
+  color: white;
+  border: none;
+  font-weight: 600;
+  font-size: 1em;
+  padding: 1em;
+  border-radius: 0.3em;
+  box-shadow: 2px gray;
+}
+button:hover {
+  background-color: green;
+}
+button:active {
+  box-shadow: none;
+  position: relative;
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.danger {
+  background-color: darkred;
+}
+.danger:hover {
+  background-color: darkred;
+}
+textarea {
+  padding: 1em;
+  width: 500px;
+  height: 100px;
+}
+button:disabled,button:disabled:hover {
+  box-shadow: none;
+  background-color: gray;
+}
+
+    
+    
